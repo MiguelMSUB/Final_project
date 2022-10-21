@@ -17,7 +17,7 @@
 The purpose of this project is to predict real or fake job postings. This topic was selected due to its relevancy to bootcamp graduates. 
 
 ## Key Questions
-* What are indicators or variables for fake job postings?
+* What are the primary indicators for fake job postings?
 * Are fake job postings more common in certain parts of the world?
 
 # <a name='Machine_Learning'></a>Machine Learning
