@@ -6,7 +6,11 @@ Pandas will be used to clean the data and perform an exploratory analysis. Furth
 
 ## Database Storage
 
-Mongo is the database we intend to use, and we will integrate Flask to display the data.
+Jupyter Notebook
+Jupyter notebook files are great for sharing code. Since Jupyter Notebook is run in a browser, we will be able to easily share our analysis within our team members. All members will need to do is download the file and run the code we provide.
+
+VS Code
+We'll also be using VS Code in this project to create our Flask application.
 
 ## Machine Learning
 
