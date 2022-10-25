@@ -16,7 +16,7 @@
 
 The purpose of this project is to predict real or fake job postings. This topic was selected due to its relevancy to bootcamp graduates. 
 
-The source of data for this analysis is from Shivam Bansal. 28 February 2020. Real/Fake Job Posting Prediction. Retrieved [Date Retrieved] from https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction.  
+The source of data for this analysis is from Shivam Bansal. 28 February 2020. Real/Fake Job Posting Prediction. Retrieved 20 October 2022 from https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction.  
 
 ## Key Questions
 * What are the primary indicators for fake job postings?
