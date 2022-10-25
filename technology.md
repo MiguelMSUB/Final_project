@@ -7,12 +7,9 @@ The data that we will extract may need to be filtered, parsed, translated, sorte
 Jupyter Notebook
 Jupyter notebook files are great for sharing code. Since Jupyter Notebook is run in a browser, we will be able to easily share our analysis within our team members. All members will need to do is download the file and run the code we provide.
 
-VS Code
-We'll also be using VS Code in this project to create our Flask application.
-
 ## Database Storage
 
-PostgreSQL
+PostgreSQL as a great and open tool is a powerful database that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. PostgreSQL extremely efficient when running deep, extensive data analysis across multiple data types. We will be able to connect to PostgreSQL Database Server in Python and export PostgreSQL Table to CSV file to be able to manipulate with our machine learning.
 
 ## Machine Learning
 
@@ -20,4 +17,4 @@ SciKitLearn is the ML library we'll be using to create a classifier. Our trainin
 
 ## Dashboard
 
-In addition to using a Flask template, we will also integrate D3.js for a fully functioning and interactive dashboard. It will be hosted on ___.
+We will use Taleau to transform our data into an engaging story for any audience. We will also integrate D3.js for a fully functioning and interactive dashboard. 
