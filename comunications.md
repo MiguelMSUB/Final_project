@@ -11,6 +11,7 @@ https://docs.google.com/spreadsheets/d/1T0JhEgFLcKty9tMg9nAYJRjBJO6YVXAEjIG_a7ZB
 
 3. Recurring meetings
 Tuesdays and thursdays 6:15 to 6:30pm
+
 Tuesdays and thursdays 9:00 to 9:30pm
 
 4. Set expectations around response rates
@@ -19,7 +20,7 @@ Consider whether these should be different by email versus a communication tool 
 
 5. Emergency protocols
 
- For example, a text to the group (imessage) after hours / before class signals that something needs to be dealt with immediately, whereas a late night email / late night slack messages can be handled in the morning.
+ For example, a text to the group (imessage) after hours / before class signals that something needs to be deal with immediately, whereas a late night email / late night slack messages can be handled in the morning.
 
  6. Bring in efficiency tools
-Trello?? 
+We'll be tracking everyone's tasks 
