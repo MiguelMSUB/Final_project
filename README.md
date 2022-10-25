@@ -20,7 +20,7 @@ The source of data for this analysis is from Shivam Bansal. 28 February 2020. Re
 
 ## Key Questions
 * What are the primary indicators for fake job postings?
-* Are fake job postings more common in certain parts of the world?
+* Are fake job postings more common in certain parts of the US?
 
 # <a name='Machine_Learning'></a>Machine Learning
 ### Model Choice - Supervised Learning
