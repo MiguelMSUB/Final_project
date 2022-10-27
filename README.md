@@ -41,7 +41,11 @@ Before running our code, please set up a database in PostgreSQL if you need help
 * Right-click on Databases and select Create followed by Database
 * Name the database "job_posting" and click Save 
 
-You will see that we are pulling in "db_password" from our config file, in the config file please have one line of code with " db_password = 'DATABASE PASSWORD HERE' " the database password will be unique to your database in PostgreSQL
+You will see that we are pulling in "db_password" from our config file, in the config file please have one line of code with " db_password = 'DATABASE PASSWORD HERE' " the database password will be unique to your database in PostgreSQL. 
+
+In this code we cleaned it slightly before loading into PostgreSQL, there were columns taken out that had a high amount of null values and were not going to be used when training our Machine Learning Model. After the columns were taken out we made sure to clean the remaining data to take out rows that had null values, once the data was cleaned we stored it in a new dataframe and uploaded that datafram to PostgreSQL. 
+
+
 
 
 
