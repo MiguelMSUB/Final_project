@@ -18,10 +18,10 @@ The core tool for this project will be th supervised machine learning in which m
 
 Supervised learning is a process of providing input data as well as correct output data to the machine learning model. The aim of a supervised learning algorithm is to find a mapping function to map the input variable(x) with the output variable(y).
 
-In the real-world, supervised learning can be used for Risk Assessment, Image classification, Fraud Detection, spam filtering, etc
+We have chosen supervised machine learning because in the real-world, it can be used for risk assessment, image classification, fraud detection, spam filtering, etc. 
 
-SciKitLearn is the ML library we'll be using to create a classifier. Our training and testing setup is .
+We will split the dataset into training and testing sets and then create a logistic regression model with specified arguments for solver, max_iter, and random_state. Besides that we’ll also use a random forest algorithm to sample the data and build several smaller, simpler decision trees. 
 
 ## Dashboard
 
-We will use Tableau to transform our data into an engaging story for any audience. We will also integrate D3.js for a fully functioning and interactive dashboard. 
+We will use Tableau public to transform our data into an engaging story for any audience. We will also integrate D3.js for a fully functioning and interactive dashboard. With Tableau public we can create and share publicly our data visualizations easy and free. 
