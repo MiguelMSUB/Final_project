@@ -38,7 +38,7 @@ We chose this dataset as it had a high usability score, enough input information
 
 <!-- vscode-markdown-toc -->
 
-Once the data was sourced, we needed to set up the folder to hold the CSV file as well as code needed to process the data and load it into our database. We chose to use Jupyter Notebook for our Python code, the dataset is in a CSV file and we are using PostgreSQL for the database. In the folder there will be the dataset - ours is saved as "fake_job_posting.csv", the Python file - ours is "Team_Project_Starter_Code.ipynb", and a "config.py" file. 
+Once the data was sourced, we needed to set up the folder to hold the CSV file as well as code needed to process the data and load it into our database. We chose to use Jupyter Notebook for our Python code, the dataset is in a CSV file and we are using PostgreSQL for the database. In the folder there will be the dataset - ours is saved as "fake_job_posting.csv", the Python file - ours is "job_posting_code.ipynb", and a "config.py" file. 
 
 The first line of code is bringing in our dependencies, please see below for what will be needed. 
 
