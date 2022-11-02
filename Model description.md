@@ -1,3 +1,35 @@
+# Machine learning: data processing, algorithms and techniques
+
+Description of preliminary data preprocessing 
+
+Data preprocessing is a process of preparing the raw data and making it suitable for a machine learning model. When creating a machine learning project, it is not always a case that we come across the clean and formatted data. And while doing any operation with data, it is mandatory to clean it and put in a formatted way. So for this, we use data preprocessing task.
+
+Description of preliminary feature engineering and preliminary feature selection, including their decision-making process 
+
+Description of how data was split into training and testing sets 
+
+Explanation of model choice, including limitations and benefits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 There are several questions to keep in mind as you work through this segment:
 
 Logistic regression model: 
@@ -32,8 +64,5 @@ There are many methods to overcome imbalanced datasets in classification modelin
 Why this specific model?
 Motivation: because during the cleaning data, we discovered that the data set used in this project is very imbalanced, most jobs are real, and few are fraudulent. We have choosen SMOTEENN as one of the most effective techniques to generat synthetic minority class samples. A balanced dataset should be able to generate better results.  
 
-What is the model's accuracy?
+Evaluation of the performance of the machine learning model
 
-If there are statistics involved, what stats are being included in analysis and why?
-
-If no statistics are involved, what would you include if you had more time?
