@@ -7,19 +7,30 @@ Logistic regression model is a machine learning technique used for classificatio
 
 
 Why this specific model?
-Logistic regression is easier to implement, interpret, and very efficient to train.
+Motivation: Logistic regression is easier to implement, interpret, and very efficient to train.
 
 
 Balance Random Forest Classifier 
 
 How does it work?
+Random forest is a technique used in modeling predictions and behavior analysis and is built on decision trees. It contains many decision trees representing a distinct instance of the classification of data input into the random forest. The random forest technique considers the instances individually, taking the one with the majority of votes as the selected prediction.
 
+Each tree in the classifications takes input from samples in the initial dataset. Features are then randomly selected, which are used in growing the tree at each node. Every tree in the forest should not be pruned until the end of the exercise when the prediction is reached decisively. In such a way, the random forest enables any classifiers with weak correlations to create a strong classifier.
 
 
 Why this specific model?
+Motivation: Among all the available classification methods, random forests provide the highest accuracy. The random forest technique can also handle big data with numerous variables running into thousands. It can automatically balance data sets when a class is more infrequent than other classes in the data. The method also handles variables fast, making it suitable for complicated tasks.
 
 
+SMOTEENN
 
+
+How does it work?
+There are many methods to overcome imbalanced datasets in classification modeling by oversampling the minority class or undersampling the majority class. To increase the model performance even further, many researchers suggest combining oversampling and undersampling methods to balance the dataset better.
+
+
+Why this specific model?
+Motivation: because during the cleaning data, we discovered that the data set used in this project is very imbalanced, most jobs are real, and few are fraudulent. We have choosen SMOTEENN as one of the most effective techniques to generat synthetic minority class samples. A balanced dataset should be able to generate better results.  
 
 What is the model's accuracy?
 
