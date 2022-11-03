@@ -1,5 +1,100 @@
+## Exploring and processing the data for Supervise Machine Learning 
+
+Before data modeling a final dataset is determined. To get that, further pre-processing is required before textual data is used for any data modeling. A summary of the actions required to complete that is featured below:
+
+![data processing 1](https://user-images.githubusercontent.com/106939511/199647220-160c61c8-4400-4bf0-8b0e-93803fecbda4.png)
 
 
+1. Data is pulled from available sources. It is important that the data sources available are trustworthy and well-built so the data collected 
+
+2. The purpose of this step is to eliminate bad data (redundant, incomplete, or incorrect data) and begin to create high-quality data for the best business intelligence. During this process we answered this questions: what data is available, what data is missing, what data can be removed. 
+
+3. The clean data is then entered into its destination, and translated into a language that it can understand
+
+4. During this stage, the data inputted to the computer in the previous stage is processed for interpretation. Processing is done using machine learning algorithms
+
+5. During the interpretation stage, the information resulted is translated, readable, and often in the form of graphs, videos, images, plain text, etc.
+
+6. The final stage of data processing is storage. Once all the data has been processed, it is important to storage for future use .
+
+## Data processing  on job fake prediction
+
+
+1.One of the tasks involved in data preparation for machine learning is to convert textual data into numerical data.Categorical and text data must therefore be converted to numerical data for use in machine learning.
+
+Our dataset includes the following columns:
+
+![data processing 2](https://user-images.githubusercontent.com/106939511/199647626-c63ffe41-5c67-4b6c-8f6f-e9e1a78ecb5d.png)
+
+
+2. To use **Scikit-learn’s machine learning algorithms** (LabelEncoder), the categorical features (*employment_type, required _experience, required_education and industry) will have to be converted into numbers*). *This process is called encoding.*  
+3. The last step in our data processing will be clean up (drop)  the unnecessary columns (all text columns).
+
+
+## Feature engineering and preliminary feature selection
+
+Feature engineering is the process of selecting, manipulating and transforming the data to create features that would make machine learning algorithms works. If the feature engineering is done correctly, then the predictive power  of the machine learning  algorithms increases.
+
+In simple words what we are doing in this step is 
+- Prepare the proper input dataset, compatible with the machine learning algorithm requirements.
+- Improve the performance of machine learning models.
+
+After performing the data processing, our clean data base includes the following features and next to them the amount of their unique input. Based on the initial analysis during the cleaning process, this project will use a dataset with these features for the final analysis:
+
+![features](https://user-images.githubusercontent.com/106939511/199647873-aa28be1f-40b0-4a2d-bb39-854908160372.png)
+
+### Feature Selector usage
+
+Nevertheless we knwo that the feature selection requires experience to determine the best features to train our model, probably we are not selecting the best set of data then we are going further in processing and in order to improve the Feature Engineering Process in our project, we will use a tool created for feature selection in Python: **FeatureSelector class** for selecting features to remove from our clean dataset [available on Github](https://github.com/WillKoehrsen/feature-selector/blob/master/Feature%20Selector%20Usage.ipynb)
+
+![feature selection](https://user-images.githubusercontent.com/106939511/199648416-95aa4dfa-5128-415f-8f1d-4caa5522d689.png)
+
+
+The function that we will use is the **Collinear Features**.  The identify_collinear method finds collinear features based on a specified correlation coefficient value. For each pair of correlated features, it identifies one of the features for removal (since we only need to remove one).
+
+Result: We will be able to access the entire list of correlated features that will be removed, or see the highly correlated pairs of features in a dataframe. 
+
+Visualization: A heatmap that shows all the features that have at least one correlation above the threshold
+
+The following heatmap is an example of what we will get onc we perform this function in our data set:
+
+![heatmap](https://user-images.githubusercontent.com/106939511/199648986-8e9514e1-3b35-4bcc-a652-00801015dcc6.png)
+
+
+## Data training and testing sets
+
+Once we have processed and improved our data set, we will be ready to train and test this data. The train-test split procedure is used to estimate the performance of machine learning algorithms when they are used to make predictions on data not used to train the model. It is a fast and easy procedure to perform, the results of which allow us to compare the performance of machine learning algorithms for our predictive modeling problem. 
+
+Here the summary of the train-test procedure that we will use in our data set:
+
+1. Import dependencies
+
+![1 IMPORT](https://user-images.githubusercontent.com/106939511/199649932-2078a874-287b-4e4e-b2e3-96c0b48b9126.png)
+
+
+2. Read encoded data set : jobs_data_encoded.csv
+
+![2  READ](https://user-images.githubusercontent.com/106939511/199649955-2969babb-0d07-44ac-8374-63fef179a633.png)
+
+
+3. Split our dataset into features (or inputs) and target (or outputs). The features set, X, will be a copy of the df_job DataFrame without the “fraudulent” column. These features are all the variables that help determine whether a job posting should be discarded because is a fraud.
+
+![3 SAVE](https://user-images.githubusercontent.com/106939511/199649972-2b443d7e-304b-44f6-8cef-80c4e5f0c673.png)
+
+
+4. Generate the target set data: The target set is the “fraudulent” column, indicating whether or not a job posting is real (0) or fake (1). The following code helps to generate the target set data.
+
+![4 GENERATE](https://user-images.githubusercontent.com/106939511/199649994-f30e809a-fb72-4455-8897-ed4c9ccac31f.png)
+
+
+5. Split the features and target sets into training and testing sets. This will help determine the relationships between each feature in the features training set and the target training set, which we'll use to determine the validity of our model using the features and target testing sets. By default, training and testing data sets are 75% and 25%, respectively, of the original data. 
+
+![5 SPLIT](https://user-images.githubusercontent.com/106939511/199650007-ff077e03-5bcc-456a-bc82-96dfcd1bf0d4.png)
+
+
+6.Scale the training and test the data: the purpose of scaling is for accelerating learning process. Features may have different scales. One maybe from 1 to 10 and one may be from -100 to 1000. Using normalization, we make the scale of them the same as each other, helps accelerate the learning process. 
+
+![6 SCALE](https://user-images.githubusercontent.com/106939511/199650025-4de97e31-4fb8-459a-a7b2-1212e495269e.png)
 
 
 
