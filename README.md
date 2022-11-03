@@ -61,17 +61,18 @@ In this code we cleaned it slightly before loading into PostgreSQL, there were c
 Description of preliminary feature engineering and preliminary feature selection, including their decision-making process. 
 
 The initial database contained a total of 18 columns. We eliminated two columns based on the high number of null values including: “salary_range” (84% null) and “department” (65% null). We also removed “function” because it appeared very similar to the “industry” column. We then created three new columns (“full_time”, “experience,” and “education_level), converting the data to integers from strings, in order to facilitate our machine learning model.  Finally, we split the location column into separate “Country,” “State,” and “City” columns. Based on our feature selection, we aim to produce three tables:
--       Company/job posting information in string format,
--       Company/job posting information with integers,
--       Location details for future mapping
+* Company/job posting information in string format
+* Company/job posting information with integers
+* Location details for future mapping
+
+
+![Image](https://github.com/MiguelMSUB/Final_project/blob/abrums/segment2/Images/ERD.png)
 
 Before using our data in our Machine Learning Model we focused on preparing the data to work well with Machine Learning. This included converting textual data into numerical data. 
 
 ![Image](https://github.com/MiguelMSUB/Final_project/blob/walzfran/segment2/Images/datatypes.png)
 
 To use Scikit-learn’s Machine Learning Algorithms (LabelEncoder), the categorical features such as employment type, required experience, industry and required education will have to be converted into numbers, this process is called encoding. 
-
-![Image_2](https://github.com/MiguelMSUB/Final_project/blob/walzfran/segment2/Images/featureselector.png)
 
 # <a name='Machine_Learning'></a>Machine Learning
 
