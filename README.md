@@ -1,4 +1,3 @@
-
 # Fake Job Predictions Final Project
 
 # Table of Contents 
@@ -6,6 +5,7 @@
 <!-- vscode-markdown-toc -->
 * [Overview](#Overview)
 * [Database](#Database)
+* [Data Processing](#Data_Processing)
 * [Machine Learning](#Machine_Learning)
 * [Communication Protocol](#Communication_Protocol)
 * [Technologies Used](#Technologies_Used)
@@ -18,7 +18,7 @@
 
 # <a name='Overview'></a>Overview
 
-The purpose of this project is to use a Machine Learning Model to predict if job postings are for actual jobs or fraudulent postings. This topic was selected due to the relevence to past and future bootcamp graduates that will be in the job market. 
+The purpose of this project is to use a Machine Learning Model to predict if job postings are for actual jobs or fraudulent postings. This topic was selected due to the relevance to past and future bootcamp graduates that will be in the job market. 
 
 The source of data for this analysis is from Shivam Bansal. 28 February 2020. Real/Fake Job Posting Prediction. Retrieved 20 October 2022 from https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction.  
 
@@ -52,12 +52,32 @@ Before running our code, please set up a database in PostgreSQL if you need help
 
 You will see that we are pulling in "db_password" from our config file, in the config file please have one line of code with " db_password = 'DATABASE PASSWORD HERE' " the database password will be unique to your database in PostgreSQL. 
 
-In this code we cleaned it slightly before loading into PostgreSQL, there were columns taken out that had a high amount of null values and were not going to be used when training our Machine Learning Model. After the columns were taken out we made sure to clean the remaining data to take out rows that had null values, once the data was cleaned we stored it in a new dataframe and uploaded that datafram to PostgreSQL. 
+In this code we cleaned it slightly before loading into PostgreSQL, there were columns taken out that had a high amount of null values and were not going to be used when training our Machine Learning Model. After the columns were taken out we made sure to clean the remaining data to take out rows that had null values, once the data was cleaned we stored it in a new dataframe and uploaded that dataframe to PostgreSQL. 
+
+# <a name='Data_Processing'></a>Data Processing
+
+Description of preliminary feature engineering and preliminary feature selection, including their decision-making process. 
+
+The initial database contained a total of 18 columns. We eliminated two columns based on the high number of null values including: “salary_range” (84% null) and “department” (65% null). We also removed “function” because it appeared very similar to the “industry” column. We then created three new columns (“full_time”, “experience,” and “education_level), converting the data to integers from strings, in order to facilitate our machine learning model.  Finally, we split the location column into separate “Country,” “State,” and “City” columns. Based on our feature selection, we aim to produce three tables:
+-       Company/job posting information in string format,
+-       Company/job posting information with integers,
+-       Location details for future mapping
+
+Before using our data in our Machine Learning Model we focused on preparing the data to work well with Machine Learning. This included converting textual data into numerical data. 
+
+![Image](https://github.com/MiguelMSUB/Final_project/blob/walzfran/segment2/Images/datatypes.png)
+
+To use Scikit-learn’s Machine Learning Algorithms (LabelEncoder), the categorical features such as employment type, required experience, industry and required education will have to be converted into numbers, this process is called encoding. 
+
+![Image_2](https://github.com/MiguelMSUB/Final_project/blob/walzfran/segment2/Images/featureselector.png)
 
 # <a name='Machine_Learning'></a>Machine Learning
+
 ### Model Choice - Supervised Learning
 
 We will rely on supervised learning to predict whether a job posting is fraudulent, based on data from prior job postings. We’ll use a classification model because the target variable has two possible values: real or fake. When the classification model encounters new data, it will use features such as employment type, telecommuting, includes questions, and location to predict whether the job posting is real or fake. 
+
+![Image_3](https://github.com/MiguelMSUB/Final_project/blob/walzfran/segment2/Images/Brainstorm.png)
 
 #### Algorithm(s)
 
@@ -70,7 +90,7 @@ We will rely on supervised learning to predict whether a job posting is fraudule
 
 # <a name='Communication_Protocol'></a>Communication Protocol
 
-1. Slack will be use as our main comunication channel.
+1. Slack will be used as our main communication channel.
 
 2. Knowledge base
 If the team has a searchable knowledge base, then everyone has access to all the information they might need. Instead of sending out a query and disrupting someone else’s workflow to get the answer, they can search and find it for themselves.
@@ -127,6 +147,6 @@ We will split the dataset into training and testing sets and then create a logis
 
 ## Dashboard
 
-We will use Tableau public to transform our data into an engaging story for any audience. We will also integrate D3.js for a fully functioning and interactive dashboard. With Tableau public we can create and share publicly our data visualizations easy and free. 
+We will use Tableau public to transform our data into an engaging story for any audience. We will also integrate D3.js for a fully functioning and interactive dashboard. With Tableau public we can create and share publicly our data visualizations easy and free. Below is an image from our Tableau Dashbord that we are working on with an interactive map of the United States with job posting data. 
 
-
+![Image_5](https://github.com/MiguelMSUB/Final_project/blob/mperez/segment2/Images/Map.png)
