@@ -20,6 +20,8 @@
 
 The purpose of this project is to use a Machine Learning Model to predict if job postings are for actual jobs or fraudulent postings. This topic was selected due to the relevance to past and future bootcamp graduates that will be in the job market. 
 
+We have made our presentation for class in Google Slides [here.](https://docs.google.com/presentation/d/1-nIw2gooqZSzrCmK9mzQFAiJq0qCpu58WzJAFUr1gMI/edit#slide=id.g17ebc36a465_0_103)
+
 The source of data for this analysis is from Shivam Bansal. 28 February 2020. Real/Fake Job Posting Prediction. Retrieved 20 October 2022 from https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction.  
 
 We chose this dataset as it had a high usability score, enough input information as well as a clear outcome that will help us train our Machine Learning Model. 
