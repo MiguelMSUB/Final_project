@@ -22,7 +22,7 @@ The purpose of this project is to use a Machine Learning Model to predict if job
 
 We have made our presentation for class in Google Slides [here.](https://docs.google.com/presentation/d/1-nIw2gooqZSzrCmK9mzQFAiJq0qCpu58WzJAFUr1gMI/edit#slide=id.g17ebc36a465_0_103)
 
-The source of data for this analysis is from Shivam Bansal. 28 February 2020. Real/Fake Job Posting Prediction. Retrieved 20 October 2022 from [Kaggle.](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)
+The source of data for this analysis is from Shivam Bansal. February 28th, 2020. Real/Fake Job Posting Prediction. Retrieved October 20th, 2022 from [Kaggle.](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)
 
 We chose this dataset as it had a high usability score, enough input information as well as a clear outcome that will help us train our Machine Learning Model. 
 
