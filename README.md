@@ -115,7 +115,7 @@ Slack messages are expected to be responded within the following 24 hours
 
 A text to the group (imessage) after hours / before recurring meeting signals that something needs to be deal with immediately/ASAP, whereas a late night slack message can be handled in the morning. 
 
-Meeting room: https://meet.google.com/rhq-dtxw-cmw 
+[Meeting Room](https://meet.google.com/rhq-dtxw-cmw)
 
  6. Bring in efficiency tools
 
