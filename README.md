@@ -5,7 +5,7 @@
 <!-- vscode-markdown-toc -->
 * [Overview](#Overview)
 * [Database](#Database)
-* [Data Processing](#Data_Processing)
+* [Data Exploration](#Data_Exploration)
 * [Machine Learning](#Machine_Learning)
 * [Communication Protocol](#Communication_Protocol)
 * [Technologies Used](#Technologies_Used)
@@ -58,7 +58,7 @@ In this code we cleaned it slightly before loading into PostgreSQL, there were c
 
 ![Image_6](https://github.com/MiguelMSUB/Final_project/blob/abrums/segment2/Images/Database_Tables.png)
 
-# <a name='Data_Processing'></a>Data Processing
+# <a name='Data_Exploration'></a>Data Exploration
 
 Description of preliminary feature engineering and preliminary feature selection, including their decision-making process. 
 
@@ -70,17 +70,45 @@ The initial database contained a total of 18 columns. We eliminated two columns 
 
 ![Image](https://github.com/MiguelMSUB/Final_project/blob/abrums/segment2/Images/ERD.png)
 
-Before using our data in our Machine Learning Model we focused on preparing the data to work well with Machine Learning. This included converting textual data into numerical data. 
-
-![Image](https://github.com/MiguelMSUB/Final_project/blob/walzfran/segment2/Images/datatypes.png)
-
-To use Scikit-learn’s Machine Learning Algorithms (LabelEncoder), the categorical features such as employment type, required experience, industry and required education will have to be converted into numbers, this process is called encoding. 
 
 # <a name='Machine_Learning'></a>Machine Learning
 
 ### Model Choice - Supervised Learning
 
 We will rely on supervised learning to predict whether a job posting is fraudulent, based on data from prior job postings. We’ll use a classification model because the target variable has two possible values: real or fake. When the classification model encounters new data, it will use features such as employment type, telecommuting, includes questions, and location to predict whether the job posting is real or fake. 
+
+## Exploring and processing the data for Supervise Machine Learning 
+
+Before data modeling a final dataset is determined. To get that, further pre-processing is required before textual data is used for any data modeling. A summary of the actions required to complete that is featured below:
+
+![data processing 1](https://user-images.githubusercontent.com/106939511/199647220-160c61c8-4400-4bf0-8b0e-93803fecbda4.png)
+
+
+1. Data is pulled from available sources. It is important that the data sources available are trustworthy and well-built.
+
+2. The purpose of this step is to eliminate bad data (redundant, incomplete, or incorrect data) and begin to create high-quality data for the best intelligence. During this process we answered this questions: what data is available, what data is missing, what data can be removed. 
+
+3. The clean data is then entered into its destination, and translated into a language that the model can understand
+
+4. During this stage, the data input to the computer in the previous stage is processed for interpretation. Processing is done using machine learning algorithms.
+
+5. During the interpretation stage, the information resulted is translated, readable, and often in the form of graphs, videos, images, plain text, etc.
+
+6. The final stage of data processing is storage. Once all the data has been processed, it is important to store for future use.
+
+## Data Processing on Fake Job Prediction
+
+
+1.One of the tasks involved in data preparation for machine learning is to convert textual data into numerical data. Categorical and text data must therefore be converted to numerical data for use in machine learning.
+
+Our dataset includes the following columns:
+
+![data processing 2](https://user-images.githubusercontent.com/106939511/199647626-c63ffe41-5c67-4b6c-8f6f-e9e1a78ecb5d.png)
+
+
+2. To use **Scikit-learn’s machine learning algorithms** (LabelEncoder), the categorical features (*employment_type, required _experience, required_education and industry) will have to be converted into numbers*). *This process is called encoding.*  
+
+3. The last step in our data processing will be clean up (drop) the unnecessary columns (all text columns).
 
 ## Feature engineering and preliminary feature selection
 
