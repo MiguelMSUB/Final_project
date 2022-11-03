@@ -22,7 +22,7 @@ The purpose of this project is to use a Machine Learning Model to predict if job
 
 We have made our presentation for class in Google Slides [here.](https://docs.google.com/presentation/d/1-nIw2gooqZSzrCmK9mzQFAiJq0qCpu58WzJAFUr1gMI/edit#slide=id.g17ebc36a465_0_103)
 
-The source of data for this analysis is from Shivam Bansal. 28 February 2020. Real/Fake Job Posting Prediction. Retrieved 20 October 2022 from https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction.  
+The source of data for this analysis is from Shivam Bansal. 28 February 2020. Real/Fake Job Posting Prediction. Retrieved 20 October 2022 from [Kaggle.](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)
 
 We chose this dataset as it had a high usability score, enough input information as well as a clear outcome that will help us train our Machine Learning Model. 
 
@@ -97,7 +97,7 @@ We will rely on supervised learning to predict whether a job posting is fraudule
 2. Knowledge base
 If the team has a searchable knowledge base, then everyone has access to all the information they might need. Instead of sending out a query and disrupting someone else’s workflow to get the answer, they can search and find it for themselves.
 
-https://docs.google.com/spreadsheets/d/1T0JhEgFLcKty9tMg9nAYJRjBJO6YVXAEjIG_a7ZBVpk/edit#gid=891834841
+[Google Spreadsheet](https://docs.google.com/spreadsheets/d/1T0JhEgFLcKty9tMg9nAYJRjBJO6YVXAEjIG_a7ZBVpk/edit#gid=891834841)
 
 3. Recurring meetings (class time and office hours)
 
@@ -106,7 +106,6 @@ Tuesdays and thursdays 6:30 to 7:00pm
 Tuesdays and thursdays 9:00 to 9:30pm
 
 Where? breakout room #3
-
 
 4. Set expectations around response rates
 
@@ -120,8 +119,10 @@ Meeting room: https://meet.google.com/rhq-dtxw-cmw
 
  6. Bring in efficiency tools
 
-We'll be tracking activities status with the following google Jamboard 
-https://jamboard.google.com/d/1fdHimrhyTrNP0fFamctsHDvefOIKriRsLuR9EaI3P1M/viewer?ts=6351d02a&f=0
+We'll be tracking activities status with the following [Google Jamboard](
+https://jamboard.google.com/d/1fdHimrhyTrNP0fFamctsHDvefOIKriRsLuR9EaI3P1M/viewer?ts=6351d02a&f=0)
+
+We are also sharing a [Google Page](https://docs.google.com/document/d/1L16WA_9Y723C0U8bHBO__x43h5eE6di2r2su3WFlTY4/edit) to help streamline infromation sharing. 
 
 # <a name='Technologies_Used'></a>Technologies Used
 
