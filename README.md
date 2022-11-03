@@ -140,7 +140,7 @@ PostgreSQL as a great and open tool is a powerful database that uses and extends
 
 ## Machine Learning
 
-The core tool for this project will be th supervised machine learning in which machines are trained using well "labelled" training data, and on basis of that data, machines predict the output. The labelled data means some input data is already tagged with the correct output.
+The core tool for this project will be th supervised machine learning in which machines are trained using well "labeled" training data, and on basis of that data, machines predict the output. The labeled data means some input data is already tagged with the correct output.
 
 Supervised learning is a process of providing input data as well as correct output data to the machine learning model. The aim of a supervised learning algorithm is to find a mapping function to map the input variable(x) with the output variable(y).
 
@@ -150,6 +150,6 @@ We will split the dataset into training and testing sets and then create a logis
 
 ## Dashboard
 
-We will use Tableau public to transform our data into an engaging story for any audience. We will also integrate D3.js for a fully functioning and interactive dashboard. With Tableau public we can create and share publicly our data visualizations easy and free. Below is an image from our Tableau Dashbord that we are working on with an interactive map of the United States with job posting data. 
+We will use Tableau public to transform our data into an engaging story for any audience. With Tableau public we can create and share publicly our data visualizations easy and free. Below is an image from our Tableau Dashbord that we are working on with an interactive map of the United States with job posting data. In the visualiztion the user will be able to filter the map to show different states job postings broken down by actual and fraudulent. 
 
 ![Image_5](https://github.com/MiguelMSUB/Final_project/blob/mperez/segment2/Images/Map.png)
