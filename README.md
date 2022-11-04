@@ -316,6 +316,8 @@ We will split the dataset into training and testing sets and then create a logis
 
 We will use Tableau Public to transform our data into an engaging story for any audience. With Tableau Public we can create and share publicly our data visualizations easy and free. Using Tableau Public there are a couple limitations, we are not able to link to our database so we have used Jupyter Notebook to clean our data before exporting it into a usable CSV file to upload to Tableau Public. 
 
+When working with Tableau Public, we want to be able to show information to help potential job hunters avoid applying to fraudulent job postings. We are hoping to be able to break down our data into an easy to digest dashboard that will be interactive as well. We think that having images such as heatmaps, bar graphs as well as maps will be useful to those looking for jobs as they will be able to pinpoint certain thigs to look for or avoid in job postings. 
+
 Below is an image from our Tableau Dashbord that we are working on with an interactive map of the United States with job posting data. In the visualiztion the user will be able to filter the map to show different states job postings broken down by actual and fraudulent. 
 
 ![Image_5](https://github.com/MiguelMSUB/Final_project/blob/mperez/segment2/Images/Map.png)
