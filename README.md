@@ -117,7 +117,7 @@ PostgreSQL as a great and open tool is a powerful database that uses and extends
 
 ## Machine Learning
 
-The core tool for this project will be th supervised machine learning in which machines are trained using well "labelled" training data, and on basis of that data, machines predict the output. The labelled data means some input data is already tagged with the correct output.
+The core tool for this project will be the supervised machine learning in which machines are trained using well "labeled" training data, and on basis of that data, machines predict the output. The labeled data means some input data is already tagged with the correct output.
 
 Supervised learning is a process of providing input data as well as correct output data to the machine learning model. The aim of a supervised learning algorithm is to find a mapping function to map the input variable(x) with the output variable(y).
 
