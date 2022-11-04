@@ -300,11 +300,11 @@ Jupyter notebook files are great for sharing code. Since Jupyter Notebook is run
 
 ## Database Storage
 
-PostgreSQL as a great and open tool is a powerful database that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. PostgreSQL extremely efficient when running deep, extensive data analysis across multiple data types. We will be able to connect to PostgreSQL Database Server in Python and export PostgreSQL Table to CSV file to be able to manipulate with our machine learning.
+PostgreSQL as a great and open tool is a powerful database that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. PostgreSQL is extremely efficient when running deep, extensive data analysis across multiple data types. We will be able to connect to PostgreSQL Database Server in Python and export PostgreSQL Table to CSV file to be able to manipulate with our machine learning.
 
 ## Machine Learning
 
-The core tool for this project will be th supervised machine learning in which machines are trained using well "labeled" training data, and on basis of that data, machines predict the output. The labeled data means some input data is already tagged with the correct output.
+The core tool for this project will be the supervised machine learning in which machines are trained using well "labeled" training data, and on basis of that data, machines predict the output. The labeled data means some input data is already tagged with the correct output.
 
 Supervised learning is a process of providing input data as well as correct output data to the machine learning model. The aim of a supervised learning algorithm is to find a mapping function to map the input variable(x) with the output variable(y).
 
