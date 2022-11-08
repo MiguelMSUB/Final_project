@@ -1,0 +1,18 @@
+SELECT job_id, telecommuting, has_company_logo, has_questions, full_time, experience, education_level, fraudulent
+INTO Company_Info_Int
+FROM postings_df
+
+SELECT job_id, title, company_profile, description, requirements, benefits, industry
+INTO Company_Info_String
+FROM postings_df
+
+SELECT posting_location.job_id, posting_location.country, posting_location.addresses, lat, long
+FROM posting_location
+FULL JOIN location_df
+ON posting_location.addresses = location_df.addresses;
+
+delete from location_df
+where lat is null
+	or long is null;
+	
+SELECT * FROM location_df
