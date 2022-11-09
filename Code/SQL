@@ -6,13 +6,14 @@ SELECT job_id, title, company_profile, description, requirements, benefits, indu
 INTO Company_Info_String
 FROM postings_df
 
-SELECT posting_location.job_id, posting_location.country, posting_location.addresses, lat, long
-FROM posting_location
-FULL JOIN location_df
-ON posting_location.addresses = location_df.addresses;
+CREATE TABLE job_posting_location
+AS (SELECT posting_location.job_id, posting_location.country, posting_location.addresses, lat, long
+	FROM posting_location
+	FULL JOIN location_df
+	ON posting_location.addresses = location_df.addresses);
 
-delete from location_df
+delete from job_posting_location
 where lat is null
 	or long is null;
 	
-SELECT * FROM location_df
+SELECT * FROM job_posting_location
