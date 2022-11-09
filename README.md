@@ -7,7 +7,6 @@
 * [Database](#Database)
 * [Data Exploration](#Data_Exploration)
 * [Machine Learning](#Machine_Learning)
-* [Communication Protocol](#Communication_Protocol)
 * [Technologies Used](#Technologies_Used)
 
 <!-- vscode-markdown-toc-config
@@ -252,41 +251,6 @@ In our case of study we should evaluate **what is worse**, false positives or fa
 **Scenario 2: Non- Risky job posting classsified as Risky job posting**
 
 Between these two scenarios, the more undesirable will be Risky job posting classified as Non-Risky job posting bacause the applicant doesnt what to provide his/her information to people that will misuse it. Since the impact of errors caused by False positives is assessed to be more significant, it makes sense to select a model that has a few False positives as possible. In other words, we should use precision instead of recall.
-
-
-# <a name='Communication_Protocol'></a>Communication Protocol
-
-1. Slack will be used as our main communication channel.
-
-2. Knowledge base
-If the team has a searchable knowledge base, then everyone has access to all the information they might need. Instead of sending out a query and disrupting someone else’s workflow to get the answer, they can search and find it for themselves.
-
-[Google Spreadsheet](https://docs.google.com/spreadsheets/d/1T0JhEgFLcKty9tMg9nAYJRjBJO6YVXAEjIG_a7ZBVpk/edit#gid=891834841)
-
-3. Recurring meetings (class time and office hours)
-
-Tuesdays and thursdays 6:30 to 7:00pm
-
-Tuesdays and thursdays 9:00 to 9:30pm
-
-Where? breakout room #3
-
-4. Set expectations around response rates
-
-Slack messages are expected to be responded within the following 24 hours
-
-5. Emergency protocols
-
-A text to the group (imessage) after hours / before recurring meeting signals that something needs to be deal with immediately/ASAP, whereas a late night slack message can be handled in the morning. 
-
-[Meeting Room](https://meet.google.com/rhq-dtxw-cmw)
-
- 6. Bring in efficiency tools
-
-We'll be tracking activities status with the following [Google Jamboard](
-https://jamboard.google.com/d/1fdHimrhyTrNP0fFamctsHDvefOIKriRsLuR9EaI3P1M/viewer?ts=6351d02a&f=0)
-
-We are also sharing a [Google Page](https://docs.google.com/document/d/1L16WA_9Y723C0U8bHBO__x43h5eE6di2r2su3WFlTY4/edit) to help streamline infromation sharing. 
 
 # <a name='Technologies_Used'></a>Technologies Used
 
