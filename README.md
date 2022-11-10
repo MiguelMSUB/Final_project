@@ -209,6 +209,11 @@ Each tree in the classifications takes input from samples in the initial dataset
 
 Motivation: Among all the available classification methods, random forests provide the highest accuracy. The random forest technique can also handle big data with numerous variables running into thousands. It can automatically balance data sets when a class is more infrequent than other classes in the data. The method also handles variables fast, making it suitable for complicated tasks.
 
+## Advantages and Disadvantages between Logistic Regression and Random Forest Classifier 
+
+![AdvantagesDisadvantages](https://user-images.githubusercontent.com/106939511/201214308-0dd7c8ec-4060-41db-9c4d-baa27d01682b.png)
+
+
 ## Improve model performance
 
 Class imbalance is a common problem in classification. It occurs when one class is much larger than the other class. Base on the previous analysis of our data set, we have discovered that it is very imbalance, most jobs are real, and few are fraudulent. Then we have choosen SMOTEENN as one of the most effective techniques to generate synthetic minority class samples. A balanced dataset should be able to generate better results.  This strategy is a combination of the oversampling the minority class and undersampling the majority class. This strategy will let us to increase the model performance even further.
