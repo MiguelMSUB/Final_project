@@ -8,8 +8,8 @@ Justification
 
 The selected model based on the evaluation above, it will be able to identify real jobs with a very high **accuracy (85%)**. However, it’s identification of fake jobs can still be improved upon.
 
-The confusion matrix above displays the following values – categorized label, number of data points categorized under the label and percentage of data represented in each category.  Based on the confusion matrix it is evident that the model identifies real jobs 99.01% of the times. However, fraudulent jobs are identified only 73.5% of the times. Only 2% of the times has the model not identified the class correctly. This shortcoming has been discussed earlier as well as Machine Learning algorithms tend to prefer the dominant classes.
+The confusion matrix above displays the following values – categorized label, number of data points categorized under the label and percentage of data represented in each category.  Based on the confusion matrix it is evident that the model identifies real jobs 85% of the times. This shortcoming has been discussed earlier as well as Machine Learning algorithms tend to prefer the dominant classes.
 
-From the confusion matrix results, the precision for the bad loan applications is low, indicating a large number of false positives, which indicates an unreliable positive classification. The recall is also low for the bad loan applications, which is indicative of a large number of false negatives. The F1 score is also low (33).
+From the confusion matrix results also we can get the precision for the Fraudulent Jobs is very low, indicating a large number of false positives, which indicates an unreliable positive classification. The recall is high for the Fraudulent jobs, which is indicative of a small number of false negatives. The F1 score is also low (35%).
 
-In summary, this random forest model is not good at classifying fraudulent loan applications because the model's accuracy, 0.520, and F1 score are low.
+
