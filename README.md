@@ -55,8 +55,6 @@ You will see that we are pulling in "db_password" from our config file, in the c
 
 In this code we cleaned it slightly before loading into PostgreSQL, there were columns taken out that had a high amount of null values and were not going to be used when training our Machine Learning Model. After the columns were taken out we made sure to clean the remaining data to take out rows that had null values, once the data was cleaned we stored it in a new dataframe and uploaded that dataframe to PostgreSQL. 
 
-![Image_6](https://github.com/MiguelMSUB/Final_project/blob/abrums/segment2/Images/Database_Tables.png)
-
 # <a name='Data_Exploration'></a>Data Exploration
 
 Description of preliminary feature engineering and preliminary feature selection, including their decision-making process. 
@@ -67,7 +65,7 @@ The initial database contained a total of 18 columns. We eliminated two columns 
 * Location details for future mapping
 
 
-![Image](https://github.com/MiguelMSUB/Final_project/blob/abrums/segment2/Images/ERD.png)
+![Image](https://github.com/MiguelMSUB/Final_project/blob/df29a7e4d27172b664bc877f264e752ebde2e005/Images/ERD.png)
 
 
 # <a name='Machine_Learning'></a>Machine Learning
@@ -208,10 +206,12 @@ Each tree in the classifications takes input from samples in the initial dataset
 
 Motivation: Among all the available classification methods, random forests provide the highest accuracy. The random forest technique can also handle big data with numerous variables running into thousands. It can automatically balance data sets when a class is more infrequent than other classes in the data. The method also handles variables fast, making it suitable for complicated tasks.
 
-## Improve model performance
+## Advantages and Disadvantages between Logistic Regression and Random Forest Classifier 
 
-Class imbalance is a common problem in classification. It occurs when one class is much larger than the other class. Base on the previous analysis of our data set, we have discovered that it is very imbalance, most jobs are real, and few are fraudulent. Then we have choosen SMOTEENN as one of the most effective techniques to generate synthetic minority class samples. A balanced dataset should be able to generate better results.  This strategy is a combination of the oversampling the minority class and undersampling the majority class. This strategy will let us to increase the model performance even further.
-SMOTEENN. 
+![AdvantagesDisadvantages](https://user-images.githubusercontent.com/106939511/201214308-0dd7c8ec-4060-41db-9c4d-baa27d01682b.png)
+
+
+
 
   
 ## Evaluation of the performance of the machine learning model
@@ -232,11 +232,13 @@ d) False negative mean that we have predicted an obervation that does not belong
 
 The following diagram illustrates the confusion matrix and how we can interpretate the data that we get from each model:
 
-![criteria](https://user-images.githubusercontent.com/106939511/199857872-f88f1641-f06d-4fcd-b0f6-09ca6f87bfdd.png)
-
+![ML final results](https://user-images.githubusercontent.com/106939511/201243947-4f5b7da8-1d28-48fa-8ebf-edb5c92db923.png)
 
 
 The next step once we have classified is to look at the metrics:
+
+![confusi matrix](https://user-images.githubusercontent.com/106939511/201238918-7f2bd687-6955-4c5a-b1d8-c5761da8062c.png)
+
 
 a) *Accuracy:* that means the number of correctly classified data instances over the total numbers of data instances.
 
@@ -246,11 +248,28 @@ c) *Recall:* means from all the real positive data values, how many are predicte
 
 In our case of study we should evaluate **what is worse**, false positives or false negatives. Let's evaluate this by revising our case with the 2 undesirable scenarios:
 
-**Scenario 1: Risky job posting classified as Non- Risky job posting**
+**Scenario 1: Fraudulent job posting classified as Non- Fraudulent job posting**
 
-**Scenario 2: Non- Risky job posting classsified as Risky job posting**
 
-Between these two scenarios, the more undesirable will be Risky job posting classified as Non-Risky job posting bacause the applicant doesnt what to provide his/her information to people that will misuse it. Since the impact of errors caused by False positives is assessed to be more significant, it makes sense to select a model that has a few False positives as possible. In other words, we should use precision instead of recall.
+**Scenario 2: Non- Fraudulenty job posting classsified as Fraudulent job posting**
+
+Between these two scenarios, the more undesirable will be Fraudulent job posting classified as Non-Fraudulent job posting bacause the applicant doesnt what to provide his/her information to people that will misuse it. Since the impact of errors caused by False positives is assessed to be more significant, it makes sense to select a model that has a few False positives as possible. In other words, we should use precision instead of recall.
+
+## Model Evaluation and Results
+
+The final model used for this analysis is **Random Forest Classifier**.  This is based on the results of the type of data set that we are using for this problem. As we mentioned before in the advantages and disadvantages of the two models previously selected for this project, the Random Forest Classifier work well with both categorical and numerical data. Besides that no scaling or transformation of variables is necessary, so that will help us to save a lot of time cleaning the data. Finally because this model also provides a very nice output with variable importance. This interpretation can help you go beyond an accurate prediction and comment on what's more important in achieving the prediction and why.
+
+The selected model based on the evaluation above, it will be able to identify real jobs with a very high **accuracy (85%)**. However, it’s identification of fake jobs can still be improved upon.
+
+The confusion matrix above displays the following values – categorized label, number of data points categorized under the label and percentage of data represented in each category.  Based on the confusion matrix it is evident that the model identifies real jobs 85% of the times. This shortcoming has been discussed earlier as well as Machine Learning algorithms tend to prefer the dominant classes.
+
+From the confusion matrix results also we can get the precision for the Fraudulent Jobs is very low, indicating a large number of false positives, which indicates an unreliable positive classification. The recall is high for the Fraudulent jobs, which is indicative of a small number of false negatives. The F1 score is also low (35%).
+
+## Improve model performance
+
+Class imbalance is a common problem in classification. It occurs when one class is much larger than the other class. Base on the previous analysis of our data set, we have discovered that it is very imbalance, most jobs are real, and few are fraudulent. Then we have choosen SMOTEENN as one of the most effective techniques to generate synthetic minority class samples. A balanced dataset should be able to generate better results.  This strategy is a combination of the oversampling the minority class and undersampling the majority class. This strategy will let us to increase the model performance even further.
+SMOTEENN. 
+
 
 # <a name='Technologies_Used'></a>Technologies Used
 
