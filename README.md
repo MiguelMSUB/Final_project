@@ -7,7 +7,6 @@
 * [Database](#Database)
 * [Data Exploration](#Data_Exploration)
 * [Machine Learning](#Machine_Learning)
-* [Communication Protocol](#Communication_Protocol)
 * [Technologies Used](#Technologies_Used)
 
 <!-- vscode-markdown-toc-config
@@ -56,8 +55,6 @@ You will see that we are pulling in "db_password" from our config file, in the c
 
 In this code we cleaned it slightly before loading into PostgreSQL, there were columns taken out that had a high amount of null values and were not going to be used when training our Machine Learning Model. After the columns were taken out we made sure to clean the remaining data to take out rows that had null values, once the data was cleaned we stored it in a new dataframe and uploaded that dataframe to PostgreSQL. 
 
-![Image_6](https://github.com/MiguelMSUB/Final_project/blob/abrums/segment2/Images/Database_Tables.png)
-
 # <a name='Data_Exploration'></a>Data Exploration
 
 Description of preliminary feature engineering and preliminary feature selection, including their decision-making process. 
@@ -68,7 +65,7 @@ The initial database contained a total of 18 columns. We eliminated two columns 
 * Location details for future mapping
 
 
-![Image](https://github.com/MiguelMSUB/Final_project/blob/abrums/segment2/Images/ERD.png)
+![Image](https://github.com/MiguelMSUB/Final_project/blob/df29a7e4d27172b664bc877f264e752ebde2e005/Images/ERD.png)
 
 
 # <a name='Machine_Learning'></a>Machine Learning
@@ -262,41 +259,6 @@ In our case of study we should evaluate **what is worse**, false positives or fa
 **Scenario 2: Non- Risky job posting classsified as Risky job posting**
 
 Between these two scenarios, the more undesirable will be Risky job posting classified as Non-Risky job posting bacause the applicant doesnt what to provide his/her information to people that will misuse it. Since the impact of errors caused by False positives is assessed to be more significant, it makes sense to select a model that has a few False positives as possible. In other words, we should use precision instead of recall.
-
-
-# <a name='Communication_Protocol'></a>Communication Protocol
-
-1. Slack will be used as our main communication channel.
-
-2. Knowledge base
-If the team has a searchable knowledge base, then everyone has access to all the information they might need. Instead of sending out a query and disrupting someone else’s workflow to get the answer, they can search and find it for themselves.
-
-[Google Spreadsheet](https://docs.google.com/spreadsheets/d/1T0JhEgFLcKty9tMg9nAYJRjBJO6YVXAEjIG_a7ZBVpk/edit#gid=891834841)
-
-3. Recurring meetings (class time and office hours)
-
-Tuesdays and thursdays 6:30 to 7:00pm
-
-Tuesdays and thursdays 9:00 to 9:30pm
-
-Where? breakout room #3
-
-4. Set expectations around response rates
-
-Slack messages are expected to be responded within the following 24 hours
-
-5. Emergency protocols
-
-A text to the group (imessage) after hours / before recurring meeting signals that something needs to be deal with immediately/ASAP, whereas a late night slack message can be handled in the morning. 
-
-[Meeting Room](https://meet.google.com/rhq-dtxw-cmw)
-
- 6. Bring in efficiency tools
-
-We'll be tracking activities status with the following [Google Jamboard](
-https://jamboard.google.com/d/1fdHimrhyTrNP0fFamctsHDvefOIKriRsLuR9EaI3P1M/viewer?ts=6351d02a&f=0)
-
-We are also sharing a [Google Page](https://docs.google.com/document/d/1L16WA_9Y723C0U8bHBO__x43h5eE6di2r2su3WFlTY4/edit) to help streamline infromation sharing. 
 
 # <a name='Technologies_Used'></a>Technologies Used
 
