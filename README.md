@@ -66,7 +66,7 @@ The initial database contained a total of 18 columns. We eliminated two columns 
 * Location details for future mapping
 
 
-![Image]()
+![Image](https://github.com/MiguelMSUB/Final_project/blob/df29a7e4d27172b664bc877f264e752ebde2e005/Images/ERD.png)
 
 
 # <a name='Machine_Learning'></a>Machine Learning
