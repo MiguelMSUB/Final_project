@@ -238,7 +238,8 @@ d) False negative mean that we have predicted an obervation that does not belong
 
 The following diagram illustrates the confusion matrix and how we can interpretate the data that we get from each model:
 
-![ML final results](https://user-images.githubusercontent.com/106939511/201238895-4a5484bf-d4a8-4e40-add1-fe4438cb92ad.png)
+![ML final results](https://user-images.githubusercontent.com/106939511/201243947-4f5b7da8-1d28-48fa-8ebf-edb5c92db923.png)
+
 
 
 
