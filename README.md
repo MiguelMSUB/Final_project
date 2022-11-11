@@ -250,6 +250,7 @@ In our case of study we should evaluate **what is worse**, false positives or fa
 
 **Scenario 1: Fraudulent job posting classified as Non- Fraudulent job posting**
 
+
 **Scenario 2: Non- Fraudulenty job posting classsified as Fraudulent job posting**
 
 Between these two scenarios, the more undesirable will be Fraudulent job posting classified as Non-Fraudulent job posting bacause the applicant doesnt what to provide his/her information to people that will misuse it. Since the impact of errors caused by False positives is assessed to be more significant, it makes sense to select a model that has a few False positives as possible. In other words, we should use precision instead of recall.
@@ -268,6 +269,7 @@ From the confusion matrix results also we can get the precision for the Fraudule
 
 Class imbalance is a common problem in classification. It occurs when one class is much larger than the other class. Base on the previous analysis of our data set, we have discovered that it is very imbalance, most jobs are real, and few are fraudulent. Then we have choosen SMOTEENN as one of the most effective techniques to generate synthetic minority class samples. A balanced dataset should be able to generate better results.  This strategy is a combination of the oversampling the minority class and undersampling the majority class. This strategy will let us to increase the model performance even further.
 SMOTEENN. 
+
 
 # <a name='Technologies_Used'></a>Technologies Used
 
@@ -299,6 +301,6 @@ We will use Tableau Public to transform our data into an engaging story for any 
 
 When working with Tableau Public, we want to be able to show information to help potential job hunters avoid applying to fraudulent job postings. We are hoping to be able to break down our data into an easy to digest dashboard that will be interactive as well. We think that having images such as heatmaps, bar graphs as well as maps will be useful to those looking for jobs as they will be able to pinpoint certain thigs to look for or avoid in job postings. 
 
-Below is an image from our Tableau Dashbord that we are working on with an interactive map of the United States with job posting data. In the visualiztion the user will be able to filter the map to show different states job postings broken down by actual and fraudulent. 
+LINK to Tableau Dashboard [here.](https://public.tableau.com/app/profile/miguel.perez6295/viz/JobPosting_16679463333560/FakeJobPredictions?publish=yes)
 
 ![Image_5](https://github.com/MiguelMSUB/Final_project/blob/mperez/segment2/Images/Map.png)
