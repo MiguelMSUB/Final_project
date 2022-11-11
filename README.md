@@ -7,6 +7,7 @@
 * [Database](#Database)
 * [Data Exploration](#Data_Exploration)
 * [Machine Learning](#Machine_Learning)
+* [Technologies Used](#Technologies_Used)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -249,6 +250,7 @@ In our case of study we should evaluate **what is worse**, false positives or fa
 
 Between these two scenarios, the more undesirable will be Risky job posting classified as Non-Risky job posting bacause the applicant doesnt what to provide his/her information to people that will misuse it. Since the impact of errors caused by False positives is assessed to be more significant, it makes sense to select a model that has a few False positives as possible. In other words, we should use precision instead of recall.
 
+# <a name='Technologies_Used'></a>Technologies Used
 
 ## Data Cleaning and Analysis
 
