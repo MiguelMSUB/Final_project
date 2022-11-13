@@ -72,7 +72,7 @@ We were able to accurately predict real job postings approximately 95% of the ti
 
 ![](https://github.com/MiguelMSUB/Final_project/blob/c5d75dd5825da5840d6080ec84829a09c1306c70/Images/confusion_matrix.png)
 
-![]()
+![](https://github.com/MiguelMSUB/Final_project/blob/d97dff275e4d941b6d91e788c20e458055a77fbd/Images/features.png)
 
 # <a name='Dashboard'></a>Dashboard
 
