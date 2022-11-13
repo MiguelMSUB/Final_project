@@ -43,7 +43,7 @@ The initial database contained a total of 18 columns and 17,880 rows. We elimina
 
 ## Data Exploration and Processing
 
-The cleaned data included most of the information necessary to create our three tables. However, coordinates for the location table were scraped from the web using gmaps, geopy, and Nominatim. After our address locations were geocoded, the subsequent csv file was loaded into pgAdmin. The geocoordinates were combined using a FULL JOIN SQL statement to create a comprehensive job_posting_location table. We created three distinct tables using pgAdmin: company_info_string, company_info_int, and job_posting_location. The updated, cleaned data contains 18 columns and 3264 rows—providing sufficient information for our machine learning model.
+The cleaned data included most of the information necessary to create our three tables. Coordinates for the location table were scraped from the web using gmaps, geopy, and Nominatim. After our address locations were geocoded, the subsequent csv file was loaded into pgAdmin. The geocoordinates were combined using a FULL JOIN SQL statement to create a comprehensive job_posting_location table. We created three distinct tables using pgAdmin: company_info_string, company_info_int, and job_posting_location. The updated, cleaned data contains 18 columns and 3264 rows—providing sufficient information for our machine learning model.
 
 ![](https://github.com/MiguelMSUB/Final_project/blob/abd8ad748e24afb1a37039e6eb1e1faccd4694bf/Images/SQL_Join.png)
 
@@ -51,14 +51,22 @@ The cleaned data included most of the information necessary to create our three 
 
 ## Model Choice
 
-Two supervised machine learning models were used: logistic regression and balance random forest classifier. Logistic regression was selected because of its ease to implement and interpret. We also used a balance random forest classifier to sample the data and build several smaller, simpler decision trees.
+Two supervised machine learning models were used: logistic regression and balance random forest classifier. Logistic Regression was selected because of its ease to implement and interpret. We also used a Balance Random Forest Classifier to sample the data and build several smaller, simpler decision trees.
 
-Limitations: These models do not take into account the class imbalance of our data. Real job posting entries far outnumber those that are fraudulent, potentially skewing our model results.
+Limitations: These models do not take into account the class imbalance of our data. Real job postings far outnumber those that are fraudulent, potentially skewing our model results.
 
-Benefits: Both models are equipped to evaluate large datasets with multiple features. The random forest technique also ranks features by their importance, helping us answer one of our key questions.
+Benefits: Both models are equipped to evaluate large datasets with multiple features. The Random Forest technique also ranks features by their importance, helping us answer one of our key questions.
 
+## Data Split, Train, and Test
 
+Logistic Regression was used in the following steps in the LogisticRegression.ipynb:
+- Imported dependencies: Pandas, Path, SciKit Learn’s LogisticRegression and StandardScaler
+- Preprocessed the data by removing string features and converting employment_type, required_experience, required education, and industry to numerical values.
+- Split the data into two sets: train and test. The train dataset included both real and fake job postings and the remaining data was used as the test dataset.
+- Fit the training data to create our Logistic Regression model, resulting in a 95% accuracy score.
 
+Random Forest was used in the following steps in the RandomForest.ipynb:
+-
 
 # <a name='Dashboard'></a>Dashboard
 
