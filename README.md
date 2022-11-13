@@ -68,6 +68,8 @@ Logistic Regression was used in the following steps in the LogisticRegression.ip
 Random Forest was used in the following steps in the RandomForest.ipynb:
 - Imported dependencies: Pandas, Path, SciKit Learn’s LabelEncoder…
 
+## Results
+
 We were able to accurately predict real job postings approximately 95% of the time with our machine learning models. We were far less successful at identifying fake job postings. Our Random Forest model predicted 187 job postings, however, only 30 were actually fake. The f1 score, or summary statistic of precision and sensitivity, for fraudulent posting is 35%—is  significantly lower than the f1 score of 91% for real job postings. We also sorted the features by column name in reverse order to identify the top three features for predicting job postings: industry, has_company_logo, and required_education. To improve our model, we can drop some of the lower ranked features.
 
 ![](https://github.com/MiguelMSUB/Final_project/blob/c5d75dd5825da5840d6080ec84829a09c1306c70/Images/confusion_matrix.png)
