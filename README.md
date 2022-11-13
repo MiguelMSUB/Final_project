@@ -24,7 +24,7 @@ Data for this analysis is from Shivam Bansal. February 28th, 2020. Real/Fake Job
 The accompanying presentation for this project can be found in [Google Slides.](https://docs.google.com/presentation/d/1-nIw2gooqZSzrCmK9mzQFAiJq0qCpu58WzJAFUr1gMI/edit#slide=id.g17ebc36a465_0_103)
 
 ## Key Questions
-* What are the primary indicators for fake job postings?
+* What are the key features for fake job postings?
 * Are fake job postings more common in certain parts of the US?
 
 <!-- vscode-markdown-toc -->
@@ -49,14 +49,22 @@ The cleaned data included most of the information necessary to create our three 
 
 # <a name='Machine_Learning'></a>Machine Learning
 
+## Model Choice
+
+Two supervised machine learning models were used: logistic regression and balance random forest classifier. Logistic regression was selected because of its ease to implement and interpret. We also used a balance random forest classifier to sample the data and build several smaller, simpler decision trees.
+
+Limitations: These models do not take into account the class imbalance of our data. Real job posting entries far outnumber those that are fraudulent, potentially skewing our model results.
+
+Benefits: Both models are equipped to evaluate large datasets with multiple features. The random forest technique also ranks features by their importance, helping us answer one of our key questions.
 
 
 
 
 # <a name='Dashboard'></a>Dashboard
 
+- We used Tableau to create the interactive dashboard.
 
-
+- Interactive Features: This interactive web visualization allows us to select the breakdown of real vs. fraudulent postings by state, industry, or several other filters.
 
 
 
