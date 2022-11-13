@@ -60,13 +60,16 @@ Benefits: Both models are equipped to evaluate large datasets with multiple feat
 ## Data Split, Train, and Test
 
 Logistic Regression was used in the following steps in the LogisticRegression.ipynb:
-- Imported dependencies: Pandas, Path, SciKit Learn’s LogisticRegression and StandardScaler
+- Imported dependencies: Pandas, Path, SciKit Learn’s LabelEncoder and LogisticRegression
 - Preprocessed the data by removing string features and converting employment_type, required_experience, required education, and industry to numerical values.
 - Split the data into two sets: train and test. The train dataset included both real and fake job postings and the remaining data was used as the test dataset.
 - Fit the training data to create our Logistic Regression model, resulting in a 95% accuracy score.
 
 Random Forest was used in the following steps in the RandomForest.ipynb:
--
+- Imported dependencies: Pandas, Path, SciKit Learn’s LabelEncoder…
+
+We were able to accurately predict real job postings approximately 95% of the time with our machine learning models. We were far less successful at identifying fake job postings. Our Random Forest model predicted 187 job postings, however, only 30 were actually fake. The f1 score, or summary statistic of precision and sensitivity, for fraudulent posting is 35%—is  significantly lower than the f1 score of 91% for real job postings. We also sorted the features by column name in reverse order to identify the top three features for predicting job postings: industry, has_company_logo, and required_education. To improve our model, we can drop some of the lower ranked features.
+
 
 # <a name='Dashboard'></a>Dashboard
 
