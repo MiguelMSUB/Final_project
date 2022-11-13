@@ -35,7 +35,7 @@ The accompanying presentation for this project can be found in [Google Slides.](
 
 ## Cleaned Data
 
-The initial database contained a total of 18 columns and 17,880 rows. We eliminated two columns based on the high number of null values including: salary_range (84% null) and department (65% null). We also removed “function” because it appeared very similar to the “industry” column. We then created three new columns (full_time, experience, and education_level), converting the data to integers in order to facilitate our machine learning model. Finally, we split the location column into separate country, state, and city columns. The data was cleaned, with empty or unneeded cells removed, using jupyter notebook. These files were used to create our Entity Relationship Diagram (ERD).
+The initial database contained a total of 18 columns and 17,880 rows. We eliminated two columns based on the high number of null values including: salary_range (84% null) and department (65% null). We also removed “function” because it appeared very similar to the “industry” column. We then created three new columns (full_time, experience, and education_level), converting the data to integers in order to facilitate our machine learning model. Finally, we split the location column into separate country, state, and city columns. The data was cleaned, with empty or unneeded cells removed, using jupyter notebook. The amended csv file was used to create our Entity Relationship Diagram (ERD).
 
 ## Entity Relationship Diagram (ERD)
 
@@ -43,8 +43,9 @@ The initial database contained a total of 18 columns and 17,880 rows. We elimina
 
 ## Data Exploration and Processing
 
-The cleaned data included most of the information necessary to create our three tables. However, coordinates for the location table were scraped from the web using gmaps, geopy, and Nominatim. After our address locations were geocoded, the updated csv file was loaded into pgAdmin. The geocoordinates were combined using a FULL JOIN SQL statement to create a comprehensive job_posting_location table. We created three distinct tables using pgAdmin: company_info_string, company_info_int, and job_posting_location. The updated, cleaned data contains 18 columns and 3264 rows—providing sufficient information for our machine learning model.
+The cleaned data included most of the information necessary to create our three tables. However, coordinates for the location table were scraped from the web using gmaps, geopy, and Nominatim. After our address locations were geocoded, the subsequent csv file was loaded into pgAdmin. The geocoordinates were combined using a FULL JOIN SQL statement to create a comprehensive job_posting_location table. We created three distinct tables using pgAdmin: company_info_string, company_info_int, and job_posting_location. The updated, cleaned data contains 18 columns and 3264 rows—providing sufficient information for our machine learning model.
 
+![](https://github.com/MiguelMSUB/Final_project/blob/abd8ad748e24afb1a37039e6eb1e1faccd4694bf/Images/SQL_Join.png)
 
 # <a name='Machine_Learning'></a>Machine Learning
 
