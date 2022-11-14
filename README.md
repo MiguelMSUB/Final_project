@@ -1,4 +1,4 @@
-![Headline](Images/.png)
+![Headline](https://github.com/MiguelMSUB/Final_project/blob/a703b407d6a3c3431cbed2e0148f7e8688449b30/Images/headline.png)
 
 # Fake Job Predictions Final Project
 
