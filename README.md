@@ -88,4 +88,4 @@ Confusion Matrix     |  Top Features
 
 # <a name='Further_Study'></a>Further Study
 
-
+- Additional techniques including dropping the least important features and using SMOTE and Edited Nearest Neighbors (ENN) algorithms would help in oversampling the minority class and clean the resulting data with an under sampling strategy. Updated job posting data, including additional fake posting entries, could also improve the current class imbalance. Future research should also include Natural Language Processing to more closely examine the table with string information for possible insights into fake job postings.
