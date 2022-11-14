@@ -1,4 +1,19 @@
 
+#Ingnore Excel and csv files
+*.xlsx
+*.csv
+
+#Folders we dont need 
+#Data/
+
+#Other files
+#RandomForest.ipynb 
+#LogisticsRegression.ipynb
+#updated_postings.ipynb 
+#updated_postings_viz.ipynb
+
+#Config Files 
+config.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
