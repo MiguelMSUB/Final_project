@@ -1,4 +1,4 @@
-![Headline](https://github.com/MiguelMSUB/Final_project/blob/a703b407d6a3c3431cbed2e0148f7e8688449b30/Images/headline.png)
+![Headline](https://github.com/MiguelMSUB/Final_project/blob/72a8f180f83964c2de46b002e2f17c069268b1d1/Images/Headline.png)
 
 # Fake Job Predictions Final Project
 
