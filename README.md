@@ -82,7 +82,7 @@ We were able to accurately predict real job postings approximately 95% of the ti
 
 - Interactive Features: This interactive web visualization allows us to select the breakdown of real vs. fraudulent postings by state, industry, or several other filters.
 
-
+![](https://github.com/MiguelMSUB/Final_project/blob/8464636e568c7c22cc87a79a48c7f461db3e6a4d/Images/dashboard.png)
 
 # <a name='Further_Study'></a>Further Study
 
