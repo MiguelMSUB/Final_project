@@ -93,4 +93,12 @@ Confusion Matrix     |  Top Features
 
 # <a name='Further_Study'></a>Further Study
 
-Additional techniques, including dropping the least important features and using SMOTE and Edited Nearest Neighbors (ENN) algorithms, would help in oversampling the minority class and clean the resulting data with an under sampling strategy. Updated job posting data, including additional fake posting entries, could also improve the current class imbalance. Future research should also include Natural Language Processing to more closely examine the table with string information for possible insights into fake job postings.
+When looking at our dataset we have come up with a few alternatives that could have been done. The first would be further training on the Machine Learning Model which would be to drop the least important features and then using SMOTE and Edited Nearest Neighbors algorithms. This would help to oversample the minority class which is fraudulent postings and then clean the resulting data with an undersampling strategy. 
+
+It would also be helpful if the dataset would have more postings, while there were over 17,000 initial rows of data there were quite a few we had to drop due to null cells. It would also help the machine learning model if there was a better balance of real to fraudulent postings in the dataset. 
+
+Future Analysis could also focus on Natural Language Processing which could help examine the data further than we were able to as there were so many columns of data that were string, we did convert some of the major ones to binary like experience and education because those were easily grouped but data that was in sentence and paragraph form was difficult to breakdown into something that was digestible to the machine learning model. That is why we would recommend looking into something like natural language processing because it could lead you in a direction of what to look for in job postings with buzzwords or continued phrases. 
+
+What would we have done differently?
+We would have engineered a new feature based on null values for all of the job postings to create more digestible data for the Machine Learning Model 
+We also would have undersampled the majority class in our current Machine Learning Model. 
