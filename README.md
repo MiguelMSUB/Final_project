@@ -41,7 +41,7 @@ The initial database contained a total of 18 columns and 17,880 rows. We elimina
 
 ## Entity Relationship Diagram (ERD)
 
-![Image](https://github.com/MiguelMSUB/Final_project/blob/cfb1b11f39158008caea4c7ec799c2283dd5c674/Images/ERD.png)
+![Image](https://github.com/MiguelMSUB/Final_project/blob/23518c98d93319c5a360055059c4c2225c23a769/Images/erd.png)
 
 ## Data Exploration and Processing
 
