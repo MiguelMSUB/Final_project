@@ -4,12 +4,12 @@
 *.csv
 
 #Folders we dont need 
-#Data/
+Data/
 
 #Other files
-#RandomForest.ipynb 
-#LogisticsRegression.ipynb
-#updated_postings_viz.ipynb
+RandomForest.ipynb 
+LogisticsRegression.ipynb
+updated_postings_viz.ipynb
 
 #Config Files 
 config.py
