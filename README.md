@@ -68,7 +68,12 @@ Logistic Regression was used in the following steps in the LogisticRegression.ip
 - Fit the training data to create our Logistic Regression model, resulting in a 95% accuracy score.
 
 Random Forest was used in the following steps in the RandomForest.ipynb:
-- Imported dependencies: Pandas, Path, SciKit Learn’s LabelEncoder…
+- Imported dependencies: Pandas, Path, SciKit Learn’s LabelEncoder, Train_test_split, Balanced Random Forest Classifier, Balance_accuracy_score, Confusion_matrix and classification_report_imbalanced
+- Preprocessed the data by removing string features and converting employment_type, required_experience, required education, and industry to numerical values.
+- Split the data into two sets: train and test. The train dataset included both real and fake job postings and the remaining data was used as the test dataset.
+- Fit the training data to create our Random Forest classifier model, resulting in a 85% accuracy score.
+- Create a data frame from the confusion matrix, print the confusion matrix and the imbalance classification report.
+- Print the list of features sorted in descending order by feature importance.
 
 ## Results
 
