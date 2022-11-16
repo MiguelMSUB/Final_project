@@ -37,7 +37,7 @@ The accompanying presentation for this project can be found in [Google Slides.](
 
 ## Cleaned Data
 
-The initial database contained a total of 18 columns and 17,880 rows. We eliminated two columns based on the high number of null values including: salary_range (84% null) and department (65% null). We also removed “function” because it appeared very similar to the “industry” column. We then created three new columns (full_time, experience, and education_level), converting the data to integers in order to facilitate our machine learning model. Finally, we split the location column into separate country and city, state (or addresses) columns. The data was cleaned, with empty or unneeded cells removed, using jupyter notebook. The amended csv file was used to create our Entity Relationship Diagram (ERD).
+The initial database contained a total of 18 columns and 17,880 rows. We eliminated two columns based on the high number of null values including: salary_range (84% null) and department (65% null). We also removed “function” because it appeared very similar to the “industry” column. We then converted four columns (employment_type, required_experience, required_education, and industry) to integers in order to facilitate our machine learning model. Finally, we split the location column into separate country and city, state (or addresses) columns. The data was cleaned, with empty or unneeded cells removed, using jupyter notebook. The amended csv file was used to create our Entity Relationship Diagram (ERD).
 
 ## Entity Relationship Diagram (ERD)
 
