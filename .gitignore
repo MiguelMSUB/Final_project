@@ -10,6 +10,7 @@ Data/
 RandomForest.ipynb 
 LogisticsRegression.ipynb
 updated_postings_viz.ipynb
+updated_postings.ipynb
 
 #Config Files 
 config.py
