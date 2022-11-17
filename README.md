@@ -93,6 +93,8 @@ When we were working on our visuilizations in Tableau we noticed that most categ
 
 - Interactive Features: This interactive web visualization allows us to select the breakdown of real vs. fraudulent postings by state, industry, or several other filters.
 
+Link to our [Tableau Dashboard](https://public.tableau.com/app/profile/francesca.walz/viz/RealFraudulentJobPostings/RealFraudulentJobPostings?publish=yes)
+
 ![](https://github.com/MiguelMSUB/Final_project/blob/main/Images/Industry_Map.png)
 ![](https://github.com/MiguelMSUB/Final_project/blob/main/Images/Dashboard_Barcharts.png)
 
