@@ -83,6 +83,10 @@ Confusion Matrix     |  Top Features
 :-------------------------:|:-------------------------:
 ![](https://github.com/MiguelMSUB/Final_project/blob/c5d75dd5825da5840d6080ec84829a09c1306c70/Images/confusion_matrix.png)  |  ![](https://github.com/MiguelMSUB/Final_project/blob/d97dff275e4d941b6d91e788c20e458055a77fbd/Images/features.png)
 
+When we were working on our visuilizations in Tableau we noticed that most categories had the highest percent of "Not Specified", jobs listed with this same grouping seemed to have the highest amount of fraudulent postings as well. As you can see below in the image depicting Required Experience, we have broken it down by real and fraudulent postings and in both "Not Specified" has the highest amount of postings. This was the same when the information was broken down by Industry and Required Education. 
+
+
+
 # <a name='Dashboard'></a>Dashboard
 
 - We used Tableau to create the interactive dashboard.
