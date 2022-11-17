@@ -1,4 +1,4 @@
-![Headline](https://github.com/MiguelMSUB/Final_project/blob/3c993d68c8593d5380d99fb9155840085c03abf2/Images/Headline.png)
+![Headline](https://github.com/MiguelMSUB/Final_project/blob/main/Images/Cities_Map.png)
 
 # Fake Job Predictions Final Project
 
@@ -93,7 +93,7 @@ When we were working on our visuilizations in Tableau we noticed that most categ
 
 - Interactive Features: This interactive web visualization allows us to select the breakdown of real vs. fraudulent postings by state, industry, or several other filters.
 
-![](https://github.com/MiguelMSUB/Final_project/blob/8464636e568c7c22cc87a79a48c7f461db3e6a4d/Images/dashboard.png)
+![](https://github.com/MiguelMSUB/Final_project/blob/main/Images/Industry_Map.png)
 ![](https://github.com/MiguelMSUB/Final_project/blob/main/Images/Dashboard_Barcharts.png)
 
 # <a name='Further_Study'></a>Further Study
